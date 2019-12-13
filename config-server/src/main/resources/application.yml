@@ -1,0 +1,18 @@
+Server:
+  port: 9090
+spring:
+  application:
+    name: "config-server"
+  profiles:
+    active: default, staging
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/fabianogoes/config-server-repo
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
