@@ -10,7 +10,7 @@ This is an example of Microservices using Spring Cloud and Kotlin
 - Spring Cloud `Hoxton.RELEASE`
 - Server Register/Discover `Eureka`
 - Spring Cloud `Config Server`
-- Api Gateway `Zull`
+- Api Gateway `Zuul`
 - Actuator
 - Postam
 
