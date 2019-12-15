@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: discovery-server
+  cloud:
+    config:
+      enabled: false #Se quiser utilizar confg remota mudar para TRUE
+      label: local #O label representa a branch do git
+      discovery:
+        enabled: false
+        serviceId: config-server
+
+server:
+  port: 8761
+  servlet:
+    application-display-name: ${spring.application.name}
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

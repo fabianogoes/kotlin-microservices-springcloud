@@ -1,0 +1,55 @@
+spring:
+  application:
+    name: api-gateway
+  profiles:
+    active: staging
+  cloud:
+    config:
+      uri: http://localhost:9090
+      label: staging
+      discovery:
+        enabled: true
+        service-id: config-server
+
+server:
+  port: 9091
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    appname: ${spring.application.name}
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    preferIpAddress: true
+    nonSecurePort: ${server.port}
+    metadata-map:
+      startup: ${random.long}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+ribbon:
+  ReadTimeout: 60000
+
+
+#zuul:
+#  ignoredServices: '*'
+#  host:
+#    time-to-live: -1
+#    connect-timeout-millis: 5000
+#    max-per-route-connections: 10000
+#    max-total-connections: 5000
+#    socket-timeout-millis: 60000
+#  semaphore:
+#    max-semaphores: 500
+
+
+

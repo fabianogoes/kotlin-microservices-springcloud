@@ -1,0 +1,18 @@
+spring:
+#  banner:
+#    location: classpath:banner.txt
+  livereload:
+    enabled: true
+
+logging:
+  file:
+    NAME: logs/config-server.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: INFO
+

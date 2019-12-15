@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: calculator
+  profiles:
+    active: staging
+  cloud:
+    config:
+      uri: http://localhost:9090
+      label: staging
+      discovery:
+        enabled: true
+        service-id: config-server
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    appname: ${spring.application.name}
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    preferIpAddress: true
+    nonSecurePort: ${server.port}
+    metadata-map:
+      startup: ${random.long}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+
+

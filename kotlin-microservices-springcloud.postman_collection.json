@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "61eb232b-6b32-41c5-a773-0c3fd5916893",
+		"name": "kotlin-microservices-springcloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "health GATEWAY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/actuator/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health CALCULATOR by GATEWAY",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "false",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9091/calculator/actuator/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"calculator",
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CALCULATOR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/calculator",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"calculator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh CALCULATOR by GATEWAY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/calculator/actuator/refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"calculator",
+						"actuator",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

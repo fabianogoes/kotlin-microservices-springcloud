@@ -1,0 +1,250 @@
+2019-12-15 00:00:03,849 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status UP (replication=false)
+2019-12-15 00:00:03,856 INFO  [http-nio-8761-exec-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8080 (replication=false)
+2019-12-15 00:00:03,919 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status UP (replication=true)
+2019-12-15 00:00:03,919 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8080 (replication=true)
+2019-12-15 00:00:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:00:33,951 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status UP (replication=false)
+2019-12-15 00:00:34,019 INFO  [http-nio-8761-exec-3] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status UP (replication=true)
+2019-12-15 00:00:37,068 INFO  [http-nio-8761-exec-5] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status DOWN (replication=false)
+2019-12-15 00:00:37,575 INFO  [http-nio-8761-exec-6] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status DOWN (replication=true)
+2019-12-15 00:01:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:01:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Evicting 1 items (expired=1, evictionLimit=1)
+2019-12-15 00:01:28,567 WARN  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : DS: Registry: expired lease for CALCULATOR/192.168.15.106:calculator:8080
+2019-12-15 00:01:28,567 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8080 (replication=false)
+2019-12-15 00:02:17,559 INFO  [http-nio-8761-exec-6] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:02:18,068 INFO  [http-nio-8761-exec-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=true)
+2019-12-15 00:02:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:02:33,660 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=false)
+2019-12-15 00:02:34,104 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=true)
+2019-12-15 00:03:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:04:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:05:17,569 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=false)
+2019-12-15 00:05:17,656 INFO  [http-nio-8761-exec-8] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:05:17,659 INFO  [http-nio-8761-exec-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:05:17,804 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=true)
+2019-12-15 00:05:17,804 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=true)
+2019-12-15 00:05:17,805 WARN  [TaskBatchingWorker-target_localhost-2] com.netflix.eureka.cluster.ReplicationTask : The replication of task CALCULATOR/192.168.15.106:calculator:8081:Heartbeat@localhost failed with response code 409
+2019-12-15 00:05:17,805 WARN  [TaskBatchingWorker-target_localhost-2] com.netflix.eureka.cluster.PeerEurekaNode : Peer wants us to take the instance information from it, since the timestamp differs,Id : 192.168.15.106:calculator:8081 My Timestamp : 1576375337525, Peer's timestamp: 1576375517653
+2019-12-15 00:05:17,805 INFO  [TaskBatchingWorker-target_localhost-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=true)
+2019-12-15 00:05:28,507 INFO  [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Current renewal threshold is : 13
+2019-12-15 00:05:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:05:31,222 INFO  [http-nio-8761-exec-3] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=false)
+2019-12-15 00:05:31,299 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:05:31,302 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:05:31,728 INFO  [http-nio-8761-exec-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=true)
+2019-12-15 00:05:31,729 INFO  [http-nio-8761-exec-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=true)
+2019-12-15 00:05:33,627 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8082 (replication=false)
+2019-12-15 00:05:33,716 INFO  [http-nio-8761-exec-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=false)
+2019-12-15 00:05:33,719 INFO  [http-nio-8761-exec-5] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=false)
+2019-12-15 00:05:33,809 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8082 (replication=true)
+2019-12-15 00:05:33,809 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=true)
+2019-12-15 00:05:33,810 WARN  [TaskBatchingWorker-target_localhost-2] com.netflix.eureka.cluster.ReplicationTask : The replication of task CALCULATOR/192.168.15.106:calculator:8082:Heartbeat@localhost failed with response code 409
+2019-12-15 00:05:33,810 WARN  [TaskBatchingWorker-target_localhost-2] com.netflix.eureka.cluster.PeerEurekaNode : Peer wants us to take the instance information from it, since the timestamp differs,Id : 192.168.15.106:calculator:8082 My Timestamp : 1576375353625, Peer's timestamp: 1576375533713
+2019-12-15 00:05:33,810 INFO  [TaskBatchingWorker-target_localhost-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=true)
+2019-12-15 00:06:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:06:52,277 INFO  [http-nio-8761-exec-5] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8082 (replication=false)
+2019-12-15 00:06:52,329 INFO  [http-nio-8761-exec-6] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=false)
+2019-12-15 00:06:52,332 INFO  [http-nio-8761-exec-8] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=false)
+2019-12-15 00:06:52,787 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8082 (replication=true)
+2019-12-15 00:06:52,788 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=true)
+2019-12-15 00:07:06,217 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=false)
+2019-12-15 00:07:06,725 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=true)
+2019-12-15 00:07:13,114 INFO  [http-nio-8761-exec-8] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=false)
+2019-12-15 00:07:13,623 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=true)
+2019-12-15 00:07:23,295 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=false)
+2019-12-15 00:07:23,359 INFO  [http-nio-8761-exec-5] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:07:23,652 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=true)
+2019-12-15 00:07:23,652 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=true)
+2019-12-15 00:07:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:07:33,083 INFO  [http-nio-8761-exec-6] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance API-GATEWAY/192.168.15.106:api-gateway:9091 (replication=false)
+2019-12-15 00:07:33,171 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=false)
+2019-12-15 00:07:33,174 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=false)
+2019-12-15 00:07:33,593 INFO  [http-nio-8761-exec-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance API-GATEWAY/192.168.15.106:api-gateway:9091 (replication=true)
+2019-12-15 00:07:33,593 INFO  [http-nio-8761-exec-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=true)
+2019-12-15 00:07:49,096 INFO  [http-nio-8761-exec-3] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8082 (replication=false)
+2019-12-15 00:07:49,145 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=false)
+2019-12-15 00:07:49,147 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=false)
+2019-12-15 00:07:49,606 INFO  [http-nio-8761-exec-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8082 (replication=true)
+2019-12-15 00:07:49,606 INFO  [http-nio-8761-exec-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=true)
+2019-12-15 00:08:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:09:12,545 INFO  [http-nio-8761-exec-5] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=false)
+2019-12-15 00:09:12,688 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=true)
+2019-12-15 00:09:22,217 INFO  [http-nio-8761-exec-5] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=false)
+2019-12-15 00:09:22,713 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=true)
+2019-12-15 00:09:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:09:46,549 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance API-GATEWAY/192.168.15.106:api-gateway:9091 (replication=false)
+2019-12-15 00:09:46,642 INFO  [http-nio-8761-exec-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=false)
+2019-12-15 00:09:46,644 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=false)
+2019-12-15 00:09:46,787 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance API-GATEWAY/192.168.15.106:api-gateway:9091 (replication=true)
+2019-12-15 00:09:46,787 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=true)
+2019-12-15 00:09:46,787 WARN  [TaskBatchingWorker-target_localhost-14] com.netflix.eureka.cluster.ReplicationTask : The replication of task API-GATEWAY/192.168.15.106:api-gateway:9091:Heartbeat@localhost failed with response code 409
+2019-12-15 00:09:46,787 WARN  [TaskBatchingWorker-target_localhost-14] com.netflix.eureka.cluster.PeerEurekaNode : Peer wants us to take the instance information from it, since the timestamp differs,Id : 192.168.15.106:api-gateway:9091 My Timestamp : 1576375762200, Peer's timestamp: 1576375786639
+2019-12-15 00:09:46,788 INFO  [TaskBatchingWorker-target_localhost-14] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=true)
+2019-12-15 00:10:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:10:52,839 INFO  [http-nio-8761-exec-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=false)
+2019-12-15 00:10:52,986 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=true)
+2019-12-15 00:10:55,851 INFO  [http-nio-8761-exec-5] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance API-GATEWAY/192.168.15.106:api-gateway:9091 (replication=false)
+2019-12-15 00:10:56,330 WARN  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : DS: Registry: cancel failed because Lease is not registered for: API-GATEWAY/192.168.15.106:api-gateway:9091
+2019-12-15 00:10:56,330 INFO  [http-nio-8761-exec-4] com.netflix.eureka.resources.InstanceResource : Not Found (Cancel): API-GATEWAY - 192.168.15.106:api-gateway:9091
+2019-12-15 00:10:56,331 WARN  [TaskBatchingWorker-target_localhost-7] com.netflix.eureka.cluster.ReplicationTask : The replication of task API-GATEWAY/192.168.15.106:api-gateway:9091:Cancel@localhost failed with response code 404
+2019-12-15 00:10:56,331 WARN  [TaskBatchingWorker-target_localhost-7] com.netflix.eureka.cluster.PeerEurekaNode : API-GATEWAY/192.168.15.106:api-gateway:9091:Cancel@localhost: missing entry.
+2019-12-15 00:11:00,265 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=false)
+2019-12-15 00:11:00,338 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=true)
+2019-12-15 00:11:03,152 INFO  [http-nio-8761-exec-3] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=false)
+2019-12-15 00:11:03,632 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=true)
+2019-12-15 00:11:24,783 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=false)
+2019-12-15 00:11:25,086 INFO  [http-nio-8761-exec-6] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=true)
+2019-12-15 00:11:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:11:37,094 INFO  [http-nio-8761-exec-8] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=false)
+2019-12-15 00:11:37,120 WARN  [http-nio-8761-exec-6] com.netflix.eureka.registry.AbstractInstanceRegistry : DS: Registry: cancel failed because Lease is not registered for: CALCULATOR/192.168.15.106:calculator:8081
+2019-12-15 00:11:37,120 INFO  [http-nio-8761-exec-6] com.netflix.eureka.resources.InstanceResource : Not Found (Cancel): CALCULATOR - 192.168.15.106:calculator:8081
+2019-12-15 00:11:37,120 WARN  [TaskBatchingWorker-target_localhost-4] com.netflix.eureka.cluster.ReplicationTask : The replication of task CALCULATOR/192.168.15.106:calculator:8081:Cancel@localhost failed with response code 404
+2019-12-15 00:11:37,120 WARN  [TaskBatchingWorker-target_localhost-4] com.netflix.eureka.cluster.PeerEurekaNode : CALCULATOR/192.168.15.106:calculator:8081:Cancel@localhost: missing entry.
+2019-12-15 00:11:37,147 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:11:37,149 INFO  [http-nio-8761-exec-3] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:11:37,657 INFO  [http-nio-8761-exec-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=true)
+2019-12-15 00:11:42,998 INFO  [http-nio-8761-exec-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=false)
+2019-12-15 00:11:43,138 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=true)
+2019-12-15 00:11:43,140 WARN  [TaskBatchingWorker-target_localhost-8] com.netflix.eureka.cluster.ReplicationTask : The replication of task API-GATEWAY/192.168.15.106:api-gateway:9091:Heartbeat@localhost failed with response code 409
+2019-12-15 00:11:43,140 WARN  [TaskBatchingWorker-target_localhost-8] com.netflix.eureka.cluster.PeerEurekaNode : Peer wants us to take the instance information from it, since the timestamp differs,Id : 192.168.15.106:api-gateway:9091 My Timestamp : 1576375884765, Peer's timestamp: 1576375902995
+2019-12-15 00:11:43,140 INFO  [TaskBatchingWorker-target_localhost-8] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=true)
+2019-12-15 00:11:48,775 INFO  [http-nio-8761-exec-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=false)
+2019-12-15 00:11:49,150 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=true)
+2019-12-15 00:12:00,149 INFO  [http-nio-8761-exec-3] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8082 (replication=false)
+2019-12-15 00:12:00,201 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=false)
+2019-12-15 00:12:00,204 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=false)
+2019-12-15 00:12:00,314 INFO  [http-nio-8761-exec-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8082 (replication=true)
+2019-12-15 00:12:00,315 INFO  [http-nio-8761-exec-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=true)
+2019-12-15 00:12:00,316 WARN  [TaskBatchingWorker-target_localhost-16] com.netflix.eureka.cluster.ReplicationTask : The replication of task CALCULATOR/192.168.15.106:calculator:8082:Heartbeat@localhost failed with response code 409
+2019-12-15 00:12:00,317 WARN  [TaskBatchingWorker-target_localhost-16] com.netflix.eureka.cluster.PeerEurekaNode : Peer wants us to take the instance information from it, since the timestamp differs,Id : 192.168.15.106:calculator:8082 My Timestamp : 1576375669142, Peer's timestamp: 1576375920199
+2019-12-15 00:12:00,317 INFO  [TaskBatchingWorker-target_localhost-16] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=true)
+2019-12-15 00:12:02,230 INFO  [http-nio-8761-exec-6] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=false)
+2019-12-15 00:12:02,300 INFO  [http-nio-8761-exec-3] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:12:02,303 INFO  [http-nio-8761-exec-5] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:12:02,324 INFO  [http-nio-8761-exec-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=true)
+2019-12-15 00:12:02,324 INFO  [http-nio-8761-exec-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=true)
+2019-12-15 00:12:02,325 WARN  [TaskBatchingWorker-target_localhost-15] com.netflix.eureka.cluster.ReplicationTask : The replication of task CALCULATOR/192.168.15.106:calculator:8081:Heartbeat@localhost failed with response code 409
+2019-12-15 00:12:02,325 WARN  [TaskBatchingWorker-target_localhost-15] com.netflix.eureka.cluster.PeerEurekaNode : Peer wants us to take the instance information from it, since the timestamp differs,Id : 192.168.15.106:calculator:8081 My Timestamp : 1576375897144, Peer's timestamp: 1576375922298
+2019-12-15 00:12:02,325 INFO  [TaskBatchingWorker-target_localhost-15] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=true)
+2019-12-15 00:12:09,387 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=false)
+2019-12-15 00:12:09,465 INFO  [http-nio-8761-exec-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:12:09,468 INFO  [http-nio-8761-exec-6] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:12:09,739 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=true)
+2019-12-15 00:12:09,740 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=true)
+2019-12-15 00:12:09,742 WARN  [TaskBatchingWorker-target_localhost-12] com.netflix.eureka.cluster.ReplicationTask : The replication of task CALCULATOR/192.168.15.106:calculator:8081:Heartbeat@localhost failed with response code 409
+2019-12-15 00:12:09,742 WARN  [TaskBatchingWorker-target_localhost-12] com.netflix.eureka.cluster.PeerEurekaNode : Peer wants us to take the instance information from it, since the timestamp differs,Id : 192.168.15.106:calculator:8081 My Timestamp : 1576375922298, Peer's timestamp: 1576375929463
+2019-12-15 00:12:09,742 INFO  [TaskBatchingWorker-target_localhost-12] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=true)
+2019-12-15 00:12:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:13:06,180 INFO  [http-nio-8761-exec-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=false)
+2019-12-15 00:13:06,586 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=true)
+2019-12-15 00:13:06,587 WARN  [TaskBatchingWorker-target_localhost-6] com.netflix.eureka.cluster.ReplicationTask : The replication of task API-GATEWAY/192.168.15.106:api-gateway:9091:Heartbeat@localhost failed with response code 409
+2019-12-15 00:13:06,587 WARN  [TaskBatchingWorker-target_localhost-6] com.netflix.eureka.cluster.PeerEurekaNode : Peer wants us to take the instance information from it, since the timestamp differs,Id : 192.168.15.106:api-gateway:9091 My Timestamp : 1576375908759, Peer's timestamp: 1576375986177
+2019-12-15 00:13:06,587 INFO  [TaskBatchingWorker-target_localhost-6] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=true)
+2019-12-15 00:13:09,198 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance API-GATEWAY/192.168.15.106:api-gateway:9091 (replication=false)
+2019-12-15 00:13:09,705 WARN  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : DS: Registry: cancel failed because Lease is not registered for: API-GATEWAY/192.168.15.106:api-gateway:9091
+2019-12-15 00:13:09,705 INFO  [http-nio-8761-exec-10] com.netflix.eureka.resources.InstanceResource : Not Found (Cancel): API-GATEWAY - 192.168.15.106:api-gateway:9091
+2019-12-15 00:13:09,706 WARN  [TaskBatchingWorker-target_localhost-7] com.netflix.eureka.cluster.ReplicationTask : The replication of task API-GATEWAY/192.168.15.106:api-gateway:9091:Cancel@localhost failed with response code 404
+2019-12-15 00:13:09,706 WARN  [TaskBatchingWorker-target_localhost-7] com.netflix.eureka.cluster.PeerEurekaNode : API-GATEWAY/192.168.15.106:api-gateway:9091:Cancel@localhost: missing entry.
+2019-12-15 00:13:13,304 INFO  [http-nio-8761-exec-8] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=false)
+2019-12-15 00:13:13,814 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status UP (replication=true)
+2019-12-15 00:13:24,593 INFO  [http-nio-8761-exec-5] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8082 (replication=false)
+2019-12-15 00:13:24,672 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=false)
+2019-12-15 00:13:24,674 INFO  [http-nio-8761-exec-8] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=false)
+2019-12-15 00:13:24,978 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8082 (replication=true)
+2019-12-15 00:13:24,979 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=true)
+2019-12-15 00:13:24,981 WARN  [TaskBatchingWorker-target_localhost-10] com.netflix.eureka.cluster.ReplicationTask : The replication of task CALCULATOR/192.168.15.106:calculator:8082:Heartbeat@localhost failed with response code 409
+2019-12-15 00:13:24,981 WARN  [TaskBatchingWorker-target_localhost-10] com.netflix.eureka.cluster.PeerEurekaNode : Peer wants us to take the instance information from it, since the timestamp differs,Id : 192.168.15.106:calculator:8082 My Timestamp : 1576375920199, Peer's timestamp: 1576376004670
+2019-12-15 00:13:24,981 INFO  [TaskBatchingWorker-target_localhost-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=true)
+2019-12-15 00:13:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:14:19,002 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=false)
+2019-12-15 00:14:19,072 INFO  [http-nio-8761-exec-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:14:19,075 INFO  [http-nio-8761-exec-6] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:14:19,369 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=true)
+2019-12-15 00:14:19,370 INFO  [http-nio-8761-exec-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=true)
+2019-12-15 00:14:19,371 WARN  [TaskBatchingWorker-target_localhost-4] com.netflix.eureka.cluster.ReplicationTask : The replication of task CALCULATOR/192.168.15.106:calculator:8081:Heartbeat@localhost failed with response code 409
+2019-12-15 00:14:19,372 WARN  [TaskBatchingWorker-target_localhost-4] com.netflix.eureka.cluster.PeerEurekaNode : Peer wants us to take the instance information from it, since the timestamp differs,Id : 192.168.15.106:calculator:8081 My Timestamp : 1576375929463, Peer's timestamp: 1576376059069
+2019-12-15 00:14:19,372 INFO  [TaskBatchingWorker-target_localhost-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=true)
+2019-12-15 00:14:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:14:57,403 INFO  [http-nio-8761-exec-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=false)
+2019-12-15 00:14:57,474 INFO  [http-nio-8761-exec-6] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:14:57,478 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=false)
+2019-12-15 00:14:57,912 INFO  [http-nio-8761-exec-3] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8081 (replication=true)
+2019-12-15 00:14:57,913 INFO  [http-nio-8761-exec-3] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8081 with status UP (replication=true)
+2019-12-15 00:15:02,407 INFO  [http-nio-8761-exec-6] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8082 (replication=false)
+2019-12-15 00:15:02,451 INFO  [http-nio-8761-exec-3] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=false)
+2019-12-15 00:15:02,454 INFO  [http-nio-8761-exec-5] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=false)
+2019-12-15 00:15:02,506 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CALCULATOR/192.168.15.106:calculator:8082 (replication=true)
+2019-12-15 00:15:02,506 INFO  [http-nio-8761-exec-7] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=true)
+2019-12-15 00:15:02,507 WARN  [TaskBatchingWorker-target_localhost-8] com.netflix.eureka.cluster.ReplicationTask : The replication of task CALCULATOR/192.168.15.106:calculator:8082:Heartbeat@localhost failed with response code 409
+2019-12-15 00:15:02,507 WARN  [TaskBatchingWorker-target_localhost-8] com.netflix.eureka.cluster.PeerEurekaNode : Peer wants us to take the instance information from it, since the timestamp differs,Id : 192.168.15.106:calculator:8082 My Timestamp : 1576376004670, Peer's timestamp: 1576376102448
+2019-12-15 00:15:02,507 INFO  [TaskBatchingWorker-target_localhost-8] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8082 with status UP (replication=true)
+2019-12-15 00:15:24,582 INFO  [http-nio-8761-exec-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=false)
+2019-12-15 00:15:24,820 INFO  [http-nio-8761-exec-1] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance API-GATEWAY/192.168.15.106:api-gateway:9091 with status DOWN (replication=true)
+2019-12-15 00:15:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-15 00:15:28,566 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Evicting 1 items (expired=1, evictionLimit=1)
+2019-12-15 00:15:28,567 WARN  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : DS: Registry: expired lease for API-GATEWAY/192.168.15.106:api-gateway:9091
+2019-12-15 00:15:28,567 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance API-GATEWAY/192.168.15.106:api-gateway:9091 (replication=false)
+2019-12-15 00:15:30,385 INFO  [SpringContextShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application DISCOVERY-SERVER with eureka with status DOWN
+2019-12-15 00:15:30,388 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shutting down ...
+2019-12-15 00:15:30,390 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shut down
+2019-12-15 00:15:30,392 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-15 00:15:30,398 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
+2019-12-15 00:15:30,398 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient
+2019-12-15 00:38:48,615 INFO  [main] com.example.microservies.discoveryserver.DiscoveryServerApplicationKt : The following profiles are active: local
+2019-12-15 00:38:49,170 WARN  [main] org.springframework.boot.actuate.endpoint.EndpointId : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-15 00:38:49,257 INFO  [main] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=9239ab5b-6b1b-376e-8bc9-cce10c5af612
+2019-12-15 00:38:49,449 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-15 00:38:49,558 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8761 (http)
+2019-12-15 00:38:49,563 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2019-12-15 00:38:49,564 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-15 00:38:49,619 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2019-12-15 00:38:49,619 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 991 ms
+2019-12-15 00:38:49,658 WARN  [main] com.netflix.config.sources.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-12-15 00:38:49,658 INFO  [main] com.netflix.config.sources.URLConfigurationSource : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-15 00:38:49,662 INFO  [main] com.netflix.config.DynamicPropertyFactory : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@437281c5
+2019-12-15 00:38:49,934 INFO  [main] com.sun.jersey.server.impl.application.WebApplicationImpl : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-12-15 00:38:49,963 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON encoding codec LegacyJacksonJson
+2019-12-15 00:38:49,963 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON decoding codec LegacyJacksonJson
+2019-12-15 00:38:50,033 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML encoding codec XStreamXml
+2019-12-15 00:38:50,034 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML decoding codec XStreamXml
+2019-12-15 00:38:50,216 WARN  [main] com.netflix.config.sources.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-12-15 00:38:50,216 INFO  [main] com.netflix.config.sources.URLConfigurationSource : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-15 00:38:50,294 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-15 00:38:50,504 WARN  [main] org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-15 00:38:50,521 WARN  [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2019-12-15 00:38:50,529 INFO  [main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
+2019-12-15 00:38:50,540 INFO  [main] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
+2019-12-15 00:38:50,540 INFO  [main] com.netflix.discovery.DiscoveryClient : Client configured to neither register nor query for data.
+2019-12-15 00:38:50,543 INFO  [main] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1576377530542 with initial instances count: 0
+2019-12-15 00:38:50,558 INFO  [main] com.netflix.eureka.DefaultEurekaServerContext : Initializing ...
+2019-12-15 00:38:50,559 INFO  [main] com.netflix.eureka.cluster.PeerEurekaNodes : Adding new peer nodes [http://localhost:8761/eureka/]
+2019-12-15 00:38:50,654 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON encoding codec LegacyJacksonJson
+2019-12-15 00:38:50,654 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON decoding codec LegacyJacksonJson
+2019-12-15 00:38:50,654 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML encoding codec XStreamXml
+2019-12-15 00:38:50,654 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML decoding codec XStreamXml
+2019-12-15 00:38:50,708 INFO  [main] com.netflix.eureka.cluster.PeerEurekaNodes : Replica node URL:  http://localhost:8761/eureka/
+2019-12-15 00:38:50,712 INFO  [main] com.netflix.eureka.registry.AbstractInstanceRegistry : Finished initializing remote region registries. All known remote regions: []
+2019-12-15 00:38:50,713 INFO  [main] com.netflix.eureka.DefaultEurekaServerContext : Initialized
+2019-12-15 00:38:50,721 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-15 00:38:50,763 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application DISCOVERY-SERVER with eureka with status UP
+2019-12-15 00:38:50,765 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Setting the eureka configuration..
+2019-12-15 00:38:50,766 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-12-15 00:38:50,766 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Eureka environment value eureka.environment is not set, defaulting to test
+2019-12-15 00:38:50,771 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : isAws returned false
+2019-12-15 00:38:50,771 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Initialized server context
+2019-12-15 00:38:50,771 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Got 1 instances from neighboring DS node
+2019-12-15 00:38:50,771 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Renew threshold is: 1
+2019-12-15 00:38:50,771 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Changing status to UP
+2019-12-15 00:38:50,776 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration : Started Eureka Server
+2019-12-15 00:38:50,787 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8761 (http) with context path ''
+2019-12-15 00:38:50,788 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration : Updating port to 8761
+2019-12-15 00:38:50,863 INFO  [main] com.example.microservies.discoveryserver.DiscoveryServerApplicationKt : Started DiscoveryServerApplicationKt in 2.782 seconds (JVM running for 3.269)
+2019-12-15 00:38:51,330 INFO  [RMI TCP Connection(1)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 00:38:51,330 INFO  [RMI TCP Connection(1)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-12-15 00:38:51,336 INFO  [RMI TCP Connection(1)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 6 ms
+2019-12-15 00:38:58,910 INFO  [SpringContextShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application DISCOVERY-SERVER with eureka with status DOWN
+2019-12-15 00:38:58,911 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shutting down ...
+2019-12-15 00:38:58,913 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shut down
+2019-12-15 00:38:58,915 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-15 00:38:58,917 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
+2019-12-15 00:38:58,917 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient
