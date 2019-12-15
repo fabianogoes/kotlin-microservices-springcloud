@@ -24,4 +24,15 @@ This is an example of Microservices using Spring Cloud and Kotlin
 
 > Import Postam Collection `kotlin-microservices-springcloud.postman_collection.json` 
 
-- Test using Postam
+**Test using Postam**   
+1. health GATEWAY
+2. health CALCULATOR by GATEWAY
+3. GET CALCULATOR
+
+> Change any calculator's propertie through of config repository of the calculator app
+
+**Execute again in the Postman**
+
+1. refresh CALCULATOR by GATEWAY
+2. GET CALCULATOR
+
