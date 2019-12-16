@@ -1,0 +1,79 @@
+version: '3'
+
+services:
+
+  discovery-server:
+    image: kms/discovery-server
+    container_name: discovery-server
+    build:
+      context: ./discovery-server
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    tty:
+      true
+    restart:
+      unless-stopped
+
+  config-server:
+    image: kms/config-server
+    container_name: config-server
+    build:
+      context: ./config-server
+      dockerfile: Dockerfile
+    environment:
+      - DISCOVERY_SERVER_HOST=discovery-server
+    ports:
+      - "9090:9090"
+    depends_on:
+      - discovery-server
+    links:
+      - discovery-server:discovery-server
+    tty:
+      true
+    restart:
+      unless-stopped
+
+  api-gateway:
+    image: kms/api-gateway
+    container_name: api-gateway
+    build:
+      context: ./api-gateway
+      dockerfile: Dockerfile
+    environment:
+      - DISCOVERY_SERVER_HOST=discovery-server
+      - CONFIG_SERVER_HOST=config-server
+    ports:
+      - "9091:9091"
+    depends_on:
+      - discovery-server
+      - config-server
+    links:
+      - discovery-server:discovery-server
+      - config-server:config-server
+    tty:
+      true
+    restart:
+      unless-stopped
+
+  calculator:
+    image: kms/calculator
+    container_name: calculator
+    build:
+      context: ./calculator
+      dockerfile: Dockerfile
+    environment:
+      - DISCOVERY_SERVER_HOST=discovery-server
+      - CONFIG_SERVER_HOST=config-server
+    ports:
+      - "8080:8080"
+    depends_on:
+      - discovery-server
+      - config-server
+    links:
+      - discovery-server:discovery-server
+      - config-server:config-server
+    tty:
+      true
+    restart:
+      unless-stopped

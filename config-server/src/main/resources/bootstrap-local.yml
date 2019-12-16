@@ -20,7 +20,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      defaultZone: http://${DISCOVERY_SERVER_HOST:localhost}:8761/eureka
   instance:
     appname: ${spring.application.name}
     leaseRenewalIntervalInSeconds: 1
