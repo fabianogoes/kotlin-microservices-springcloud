@@ -1,5 +1,5 @@
 #!/bin/bash
-
+clear
 PROFILE=staging
 
 APP=discovery-server
