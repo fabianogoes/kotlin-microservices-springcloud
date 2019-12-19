@@ -1,24 +1,23 @@
 spring:
   application:
-    name: calculator
+    name: gateway
   profiles:
     active: staging
   cloud:
     config:
-      name: ${spring.application.name}
+#      uri: http://${CONFIG_SERVER_HOST:localhost}:9090
       label: staging
-      uri: http://${CONFIG_SERVER_HOST:localhost}:9090
-#      discovery:
-#        service-id: configserver
-#        enabled: true
+      discovery:
+        enabled: true
+        service-id: configserver
 
 server:
-  port: ${SERVER_PORT:8080}
+  port: ${SERVER_PORT:9091}
+  servlet:
+    application-display-name: ${spring.application.name}
 
 eureka:
   client:
-    region: default
-    registry-fetch-interval-seconds: 15
     serviceUrl:
       defaultZone: http://${DISCOVERY_SERVER_HOST:localhost}:8761/eureka
   instance:
@@ -38,6 +37,21 @@ management:
   endpoint:
     health:
       show-details: always
+
+ribbon:
+  ReadTimeout: 60000
+
+
+#zuul:
+#  ignoredServices: '*'
+#  host:
+#    time-to-live: -1
+#    connect-timeout-millis: 5000
+#    max-per-route-connections: 10000
+#    max-total-connections: 5000
+#    socket-timeout-millis: 60000
+#  semaphore:
+#    max-semaphores: 500
 
 
 

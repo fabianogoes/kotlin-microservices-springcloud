@@ -2,17 +2,17 @@ spring:
   application:
     name: calculator
   profiles:
-    active: default
+    active: default, local
   cloud:
     config:
       uri: http://${CONFIG_SERVER_HOST:localhost}:9090
-      label: local
-      discovery:
-        enabled: true
-        service-id: config-server
+      label: local, default
+#      discovery:
+#        enabled: true
+#        service-id: configserver
 
 server:
-  port: 8080
+  port: ${SERVER_PORT:8080}
 
 eureka:
   client:

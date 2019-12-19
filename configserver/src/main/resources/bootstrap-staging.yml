@@ -1,19 +1,24 @@
 spring:
   application:
-    name: calculator
+    name: configserver
   profiles:
     active: staging
   cloud:
     config:
       name: ${spring.application.name}
       label: staging
-      uri: http://${CONFIG_SERVER_HOST:localhost}:9090
-#      discovery:
-#        service-id: configserver
-#        enabled: true
+      server:
+        git:
+          uri: https://github.com/fabianogoes/config-server-repo
+          default-label: staging
+          #username: <GITHUB_USER>
+          #password: <GITHUB_PASSWORD>
+
 
 server:
-  port: ${SERVER_PORT:8080}
+  port: ${SERVER_PORT:9090}
+  servlet:
+    application-display-name: ${spring.application.name}
 
 eureka:
   client:
@@ -38,6 +43,3 @@ management:
   endpoint:
     health:
       show-details: always
-
-
-

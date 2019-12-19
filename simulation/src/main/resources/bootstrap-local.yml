@@ -1,24 +1,21 @@
 spring:
   application:
-    name: calculator
+    name: simulation
   profiles:
-    active: staging
+    active: default, local
   cloud:
     config:
-      name: ${spring.application.name}
-      label: staging
-      uri: http://${CONFIG_SERVER_HOST:localhost}:9090
-#      discovery:
-#        service-id: configserver
-#        enabled: true
+#      uri: http://${CONFIG_SERVER_HOST:localhost}:9090
+      label: local, default
+      discovery:
+        enabled: true
+        service-id: configserver
 
 server:
-  port: ${SERVER_PORT:8080}
+  port: ${SERVER_PORT:8090}
 
 eureka:
   client:
-    region: default
-    registry-fetch-interval-seconds: 15
     serviceUrl:
       defaultZone: http://${DISCOVERY_SERVER_HOST:localhost}:8761/eureka
   instance:
@@ -38,6 +35,4 @@ management:
   endpoint:
     health:
       show-details: always
-
-
 

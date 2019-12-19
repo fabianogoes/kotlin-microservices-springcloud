@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example.microservices</groupId>
-    <artifactId>calculator</artifactId>
+    <artifactId>simulation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>calculator</name>
+    <name>simulation</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -58,6 +58,25 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <!-- dependency to support feign client -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
+        <!-- dependency to support ribbon -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-ribbon</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
+        <!-- dependency to support hystrix -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+            <version>1.4.6.RELEASE</version>
         </dependency>
 
         <dependency>

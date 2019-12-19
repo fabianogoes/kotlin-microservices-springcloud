@@ -1,0 +1,17 @@
+logging:
+  file:
+    name: logs/discover.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    com:
+      example:
+        microservies: DEBUG
+    org:
+      springframework:
+        web: INFO
+
+management:
+  endpoints:
+    enabled-by-default: true

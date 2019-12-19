@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: local, default
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/fabianogoes/config-server-repo
+          default-label: local, default
+          #username: <GITHUB_USER>
+          #password: <GITHUB_PASSWORD>
+
+server:
+  port: ${SERVER_PORT:9090}
+  servlet:
+    application-display-name: ${spring.application.name}
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

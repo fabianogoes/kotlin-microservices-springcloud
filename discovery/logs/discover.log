@@ -1,0 +1,362 @@
+2019-12-18 17:01:22,094 INFO  [main] com.example.microservies.discoveryserver.DiscoveryServerApplicationKt : The following profiles are active: staging
+2019-12-18 17:01:22,651 WARN  [main] org.springframework.boot.actuate.endpoint.EndpointId : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-18 17:01:22,741 INFO  [main] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=9239ab5b-6b1b-376e-8bc9-cce10c5af612
+2019-12-18 17:01:22,937 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-18 17:01:23,038 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9091 (http)
+2019-12-18 17:01:23,043 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2019-12-18 17:01:23,043 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-18 17:01:23,100 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2019-12-18 17:01:23,100 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 992 ms
+2019-12-18 17:01:23,140 WARN  [main] com.netflix.config.sources.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-12-18 17:01:23,140 INFO  [main] com.netflix.config.sources.URLConfigurationSource : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-18 17:01:23,145 INFO  [main] com.netflix.config.DynamicPropertyFactory : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@283ab206
+2019-12-18 17:01:23,427 INFO  [main] com.sun.jersey.server.impl.application.WebApplicationImpl : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-12-18 17:01:23,458 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON encoding codec LegacyJacksonJson
+2019-12-18 17:01:23,458 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON decoding codec LegacyJacksonJson
+2019-12-18 17:01:23,528 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML encoding codec XStreamXml
+2019-12-18 17:01:23,529 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML decoding codec XStreamXml
+2019-12-18 17:01:23,716 WARN  [main] com.netflix.config.sources.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-12-18 17:01:23,716 INFO  [main] com.netflix.config.sources.URLConfigurationSource : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-18 17:01:23,793 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 17:01:24,030 WARN  [main] org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-18 17:01:24,050 WARN  [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2019-12-18 17:01:24,058 INFO  [main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
+2019-12-18 17:01:24,070 INFO  [main] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
+2019-12-18 17:01:24,070 INFO  [main] com.netflix.discovery.DiscoveryClient : Client configured to neither register nor query for data.
+2019-12-18 17:01:24,074 INFO  [main] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1576695684073 with initial instances count: 0
+2019-12-18 17:01:24,090 INFO  [main] com.netflix.eureka.DefaultEurekaServerContext : Initializing ...
+2019-12-18 17:01:24,091 INFO  [main] com.netflix.eureka.cluster.PeerEurekaNodes : Adding new peer nodes [http://localhost:8761/eureka/]
+2019-12-18 17:01:24,189 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON encoding codec LegacyJacksonJson
+2019-12-18 17:01:24,189 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON decoding codec LegacyJacksonJson
+2019-12-18 17:01:24,189 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML encoding codec XStreamXml
+2019-12-18 17:01:24,189 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML decoding codec XStreamXml
+2019-12-18 17:01:24,247 INFO  [main] com.netflix.eureka.cluster.PeerEurekaNodes : Replica node URL:  http://localhost:8761/eureka/
+2019-12-18 17:01:24,252 INFO  [main] com.netflix.eureka.registry.AbstractInstanceRegistry : Finished initializing remote region registries. All known remote regions: []
+2019-12-18 17:01:24,253 INFO  [main] com.netflix.eureka.DefaultEurekaServerContext : Initialized
+2019-12-18 17:01:24,261 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-18 17:01:24,304 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application DISCOVERY with eureka with status UP
+2019-12-18 17:01:24,306 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Setting the eureka configuration..
+2019-12-18 17:01:24,307 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-12-18 17:01:24,307 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Eureka environment value eureka.environment is not set, defaulting to test
+2019-12-18 17:01:24,312 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : isAws returned false
+2019-12-18 17:01:24,312 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Initialized server context
+2019-12-18 17:01:24,312 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Got 1 instances from neighboring DS node
+2019-12-18 17:01:24,312 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Renew threshold is: 1
+2019-12-18 17:01:24,312 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Changing status to UP
+2019-12-18 17:01:24,317 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration : Started Eureka Server
+2019-12-18 17:01:24,328 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9091 (http) with context path ''
+2019-12-18 17:01:24,328 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration : Updating port to 9091
+2019-12-18 17:01:24,344 INFO  [main] com.example.microservies.discoveryserver.DiscoveryServerApplicationKt : Started DiscoveryServerApplicationKt in 2.759 seconds (JVM running for 3.214)
+2019-12-18 17:01:24,891 INFO  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 17:01:24,891 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-12-18 17:01:24,896 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2019-12-18 17:01:35,091 INFO  [SpringContextShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application DISCOVERY with eureka with status DOWN
+2019-12-18 17:01:35,093 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shutting down ...
+2019-12-18 17:01:35,095 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shut down
+2019-12-18 17:01:35,098 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-18 17:01:35,100 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
+2019-12-18 17:01:35,101 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient
+2019-12-18 17:02:11,056 INFO  [main] com.example.microservies.discoveryserver.DiscoveryServerApplicationKt : The following profiles are active: staging
+2019-12-18 17:02:11,648 WARN  [main] org.springframework.boot.actuate.endpoint.EndpointId : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-18 17:02:11,738 INFO  [main] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=9239ab5b-6b1b-376e-8bc9-cce10c5af612
+2019-12-18 17:02:11,922 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-18 17:02:12,026 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8761 (http)
+2019-12-18 17:02:12,032 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2019-12-18 17:02:12,032 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-18 17:02:12,086 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2019-12-18 17:02:12,086 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1017 ms
+2019-12-18 17:02:12,127 WARN  [main] com.netflix.config.sources.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-12-18 17:02:12,127 INFO  [main] com.netflix.config.sources.URLConfigurationSource : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-18 17:02:12,132 INFO  [main] com.netflix.config.DynamicPropertyFactory : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5fb5ad40
+2019-12-18 17:02:12,437 INFO  [main] com.sun.jersey.server.impl.application.WebApplicationImpl : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-12-18 17:02:12,470 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON encoding codec LegacyJacksonJson
+2019-12-18 17:02:12,471 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON decoding codec LegacyJacksonJson
+2019-12-18 17:02:12,542 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML encoding codec XStreamXml
+2019-12-18 17:02:12,542 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML decoding codec XStreamXml
+2019-12-18 17:02:12,749 WARN  [main] com.netflix.config.sources.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-12-18 17:02:12,749 INFO  [main] com.netflix.config.sources.URLConfigurationSource : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-18 17:02:12,829 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 17:02:13,329 WARN  [main] org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-18 17:02:13,353 WARN  [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2019-12-18 17:02:13,362 INFO  [main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
+2019-12-18 17:02:13,374 INFO  [main] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
+2019-12-18 17:02:13,374 INFO  [main] com.netflix.discovery.DiscoveryClient : Client configured to neither register nor query for data.
+2019-12-18 17:02:13,377 INFO  [main] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1576695733376 with initial instances count: 0
+2019-12-18 17:02:13,394 INFO  [main] com.netflix.eureka.DefaultEurekaServerContext : Initializing ...
+2019-12-18 17:02:13,395 INFO  [main] com.netflix.eureka.cluster.PeerEurekaNodes : Adding new peer nodes [http://localhost:8761/eureka/]
+2019-12-18 17:02:13,480 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON encoding codec LegacyJacksonJson
+2019-12-18 17:02:13,481 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON decoding codec LegacyJacksonJson
+2019-12-18 17:02:13,481 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML encoding codec XStreamXml
+2019-12-18 17:02:13,481 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML decoding codec XStreamXml
+2019-12-18 17:02:13,536 INFO  [main] com.netflix.eureka.cluster.PeerEurekaNodes : Replica node URL:  http://localhost:8761/eureka/
+2019-12-18 17:02:13,540 INFO  [main] com.netflix.eureka.registry.AbstractInstanceRegistry : Finished initializing remote region registries. All known remote regions: []
+2019-12-18 17:02:13,540 INFO  [main] com.netflix.eureka.DefaultEurekaServerContext : Initialized
+2019-12-18 17:02:13,548 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-18 17:02:13,589 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application DISCOVERY with eureka with status UP
+2019-12-18 17:02:13,590 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Setting the eureka configuration..
+2019-12-18 17:02:13,591 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-12-18 17:02:13,592 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Eureka environment value eureka.environment is not set, defaulting to test
+2019-12-18 17:02:13,596 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : isAws returned false
+2019-12-18 17:02:13,596 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Initialized server context
+2019-12-18 17:02:13,596 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Got 1 instances from neighboring DS node
+2019-12-18 17:02:13,597 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Renew threshold is: 1
+2019-12-18 17:02:13,597 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Changing status to UP
+2019-12-18 17:02:13,602 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration : Started Eureka Server
+2019-12-18 17:02:13,613 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8761 (http) with context path ''
+2019-12-18 17:02:13,614 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration : Updating port to 8761
+2019-12-18 17:02:13,628 INFO  [main] com.example.microservies.discoveryserver.DiscoveryServerApplicationKt : Started DiscoveryServerApplicationKt in 3.119 seconds (JVM running for 3.543)
+2019-12-18 17:02:13,761 INFO  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 17:02:13,761 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-12-18 17:02:13,765 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 4 ms
+2019-12-18 17:03:13,598 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-18 17:03:46,481 INFO  [SpringContextShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application DISCOVERY with eureka with status DOWN
+2019-12-18 17:03:46,483 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shutting down ...
+2019-12-18 17:03:46,486 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shut down
+2019-12-18 17:03:46,488 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-18 17:03:46,491 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
+2019-12-18 17:03:46,491 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient
+2019-12-18 17:04:17,280 INFO  [main] com.example.microservies.discoveryserver.DiscoveryServerApplicationKt : The following profiles are active: staging
+2019-12-18 17:04:18,199 WARN  [main] org.springframework.boot.actuate.endpoint.EndpointId : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-18 17:04:18,356 INFO  [main] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=9239ab5b-6b1b-376e-8bc9-cce10c5af612
+2019-12-18 17:04:18,706 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-18 17:04:18,903 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8761 (http)
+2019-12-18 17:04:18,913 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2019-12-18 17:04:18,914 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-18 17:04:19,028 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2019-12-18 17:04:19,029 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1731 ms
+2019-12-18 17:04:19,124 WARN  [main] com.netflix.config.sources.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-12-18 17:04:19,125 INFO  [main] com.netflix.config.sources.URLConfigurationSource : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-18 17:04:19,137 INFO  [main] com.netflix.config.DynamicPropertyFactory : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1693ff90
+2019-12-18 17:04:19,731 INFO  [main] com.sun.jersey.server.impl.application.WebApplicationImpl : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-12-18 17:04:19,798 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON encoding codec LegacyJacksonJson
+2019-12-18 17:04:19,800 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON decoding codec LegacyJacksonJson
+2019-12-18 17:04:19,928 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML encoding codec XStreamXml
+2019-12-18 17:04:19,928 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML decoding codec XStreamXml
+2019-12-18 17:04:20,264 WARN  [main] com.netflix.config.sources.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-12-18 17:04:20,264 INFO  [main] com.netflix.config.sources.URLConfigurationSource : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-18 17:04:20,425 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 17:04:20,836 WARN  [main] org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-18 17:04:20,869 WARN  [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2019-12-18 17:04:20,883 INFO  [main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
+2019-12-18 17:04:20,905 INFO  [main] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
+2019-12-18 17:04:20,905 INFO  [main] com.netflix.discovery.DiscoveryClient : Client configured to neither register nor query for data.
+2019-12-18 17:04:20,909 INFO  [main] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1576695860908 with initial instances count: 0
+2019-12-18 17:04:20,932 INFO  [main] com.netflix.eureka.DefaultEurekaServerContext : Initializing ...
+2019-12-18 17:04:20,934 INFO  [main] com.netflix.eureka.cluster.PeerEurekaNodes : Adding new peer nodes [http://localhost:8761/eureka/]
+2019-12-18 17:04:21,062 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON encoding codec LegacyJacksonJson
+2019-12-18 17:04:21,062 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON decoding codec LegacyJacksonJson
+2019-12-18 17:04:21,062 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML encoding codec XStreamXml
+2019-12-18 17:04:21,062 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML decoding codec XStreamXml
+2019-12-18 17:04:21,186 INFO  [main] com.netflix.eureka.cluster.PeerEurekaNodes : Replica node URL:  http://localhost:8761/eureka/
+2019-12-18 17:04:21,197 INFO  [main] com.netflix.eureka.registry.AbstractInstanceRegistry : Finished initializing remote region registries. All known remote regions: []
+2019-12-18 17:04:21,198 INFO  [main] com.netflix.eureka.DefaultEurekaServerContext : Initialized
+2019-12-18 17:04:21,213 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-18 17:04:21,296 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application DISCOVERY with eureka with status UP
+2019-12-18 17:04:21,300 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Setting the eureka configuration..
+2019-12-18 17:04:21,301 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-12-18 17:04:21,302 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Eureka environment value eureka.environment is not set, defaulting to test
+2019-12-18 17:04:21,311 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : isAws returned false
+2019-12-18 17:04:21,311 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Initialized server context
+2019-12-18 17:04:21,312 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Got 1 instances from neighboring DS node
+2019-12-18 17:04:21,312 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Renew threshold is: 1
+2019-12-18 17:04:21,312 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Changing status to UP
+2019-12-18 17:04:21,322 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration : Started Eureka Server
+2019-12-18 17:04:21,342 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8761 (http) with context path ''
+2019-12-18 17:04:21,343 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration : Updating port to 8761
+2019-12-18 17:04:21,418 INFO  [main] com.example.microservies.discoveryserver.DiscoveryServerApplicationKt : Started DiscoveryServerApplicationKt in 4.762 seconds (JVM running for 5.35)
+2019-12-18 17:04:21,900 INFO  [RMI TCP Connection(18)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 17:04:21,900 INFO  [RMI TCP Connection(18)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-12-18 17:04:21,905 INFO  [RMI TCP Connection(18)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2019-12-18 17:04:30,029 INFO  [SpringContextShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application DISCOVERY with eureka with status DOWN
+2019-12-18 17:04:30,031 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shutting down ...
+2019-12-18 17:04:30,033 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shut down
+2019-12-18 17:04:30,035 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-18 17:04:30,038 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
+2019-12-18 17:04:30,038 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient
+2019-12-18 17:04:45,134 INFO  [main] com.example.microservies.discoveryserver.DiscoveryServerApplicationKt : The following profiles are active: staging
+2019-12-18 17:04:45,999 WARN  [main] org.springframework.boot.actuate.endpoint.EndpointId : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-18 17:04:46,131 INFO  [main] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=8671791f-1851-3689-903f-83e6d6c6d107
+2019-12-18 17:04:46,367 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-18 17:04:46,453 WARN  [main] io.undertow.websockets.jsr : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-18 17:04:46,465 INFO  [main] io.undertow.servlet : Initializing Spring embedded WebApplicationContext
+2019-12-18 17:04:46,465 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1309 ms
+2019-12-18 17:04:46,508 WARN  [main] com.netflix.config.sources.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-12-18 17:04:46,508 INFO  [main] com.netflix.config.sources.URLConfigurationSource : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-18 17:04:46,513 INFO  [main] com.netflix.config.DynamicPropertyFactory : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@530ee28b
+2019-12-18 17:04:46,862 WARN  [main] com.netflix.config.sources.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-12-18 17:04:46,862 INFO  [main] com.netflix.config.sources.URLConfigurationSource : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-18 17:04:46,940 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 17:04:47,155 WARN  [main] org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-18 17:04:47,173 WARN  [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2019-12-18 17:04:47,252 INFO  [main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
+2019-12-18 17:04:47,266 INFO  [main] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
+2019-12-18 17:04:47,267 INFO  [main] com.netflix.discovery.DiscoveryClient : Client configured to neither register nor query for data.
+2019-12-18 17:04:47,270 INFO  [main] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1576695887269 with initial instances count: 0
+2019-12-18 17:04:47,288 INFO  [main] com.netflix.eureka.DefaultEurekaServerContext : Initializing ...
+2019-12-18 17:04:47,289 INFO  [main] com.netflix.eureka.cluster.PeerEurekaNodes : Adding new peer nodes [http://localhost:8761/eureka/]
+2019-12-18 17:04:47,380 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON encoding codec LegacyJacksonJson
+2019-12-18 17:04:47,380 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON decoding codec LegacyJacksonJson
+2019-12-18 17:04:47,380 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML encoding codec XStreamXml
+2019-12-18 17:04:47,380 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML decoding codec XStreamXml
+2019-12-18 17:04:47,500 INFO  [main] com.netflix.eureka.cluster.PeerEurekaNodes : Replica node URL:  http://localhost:8761/eureka/
+2019-12-18 17:04:47,505 INFO  [main] com.netflix.eureka.registry.AbstractInstanceRegistry : Finished initializing remote region registries. All known remote regions: []
+2019-12-18 17:04:47,505 INFO  [main] com.netflix.eureka.DefaultEurekaServerContext : Initialized
+2019-12-18 17:04:47,513 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-18 17:04:47,553 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application DISCOVERY with eureka with status UP
+2019-12-18 17:04:47,555 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Setting the eureka configuration..
+2019-12-18 17:04:47,556 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-12-18 17:04:47,556 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Eureka environment value eureka.environment is not set, defaulting to test
+2019-12-18 17:04:47,561 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : isAws returned false
+2019-12-18 17:04:47,561 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Initialized server context
+2019-12-18 17:04:47,561 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Got 1 instances from neighboring DS node
+2019-12-18 17:04:47,561 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Renew threshold is: 1
+2019-12-18 17:04:47,561 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Changing status to UP
+2019-12-18 17:04:47,567 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration : Started Eureka Server
+2019-12-18 17:04:47,584 INFO  [main] com.sun.jersey.server.impl.application.WebApplicationImpl : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-12-18 17:04:47,602 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON encoding codec LegacyJacksonJson
+2019-12-18 17:04:47,602 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON decoding codec LegacyJacksonJson
+2019-12-18 17:04:47,603 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML encoding codec XStreamXml
+2019-12-18 17:04:47,603 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML decoding codec XStreamXml
+2019-12-18 17:04:47,738 INFO  [main] io.undertow : starting server: Undertow - 2.0.28.Final
+2019-12-18 17:04:47,742 INFO  [main] org.xnio : XNIO version 3.3.8.Final
+2019-12-18 17:04:47,746 INFO  [main] org.xnio.nio : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-18 17:04:47,771 INFO  [main] org.springframework.boot.web.embedded.undertow.UndertowServletWebServer : Undertow started on port(s) 8761 (http) with context path ''
+2019-12-18 17:04:47,771 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration : Updating port to 8761
+2019-12-18 17:04:47,790 INFO  [main] com.example.microservies.discoveryserver.DiscoveryServerApplicationKt : Started DiscoveryServerApplicationKt in 3.656 seconds (JVM running for 4.568)
+2019-12-18 17:04:48,336 INFO  [RMI TCP Connection(8)-127.0.0.1] io.undertow.servlet : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 17:04:48,336 INFO  [RMI TCP Connection(8)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-12-18 17:04:48,341 INFO  [RMI TCP Connection(8)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2019-12-18 17:05:44,317 INFO  [XNIO-1 task-3] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:8761 with status UP (replication=false)
+2019-12-18 17:05:44,334 INFO  [XNIO-1 task-4] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:8761 with status DOWN (replication=false)
+2019-12-18 17:05:44,341 INFO  [XNIO-1 task-5] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CONFIGSERVER/192.168.15.106:configserver:8761 (replication=false)
+2019-12-18 17:05:44,915 INFO  [XNIO-1 task-6] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:8761 with status DOWN (replication=true)
+2019-12-18 17:05:44,916 INFO  [XNIO-1 task-6] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CONFIGSERVER/192.168.15.106:configserver:8761 (replication=true)
+2019-12-18 17:05:47,562 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-18 17:06:28,403 INFO  [XNIO-1 task-8] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status UP (replication=false)
+2019-12-18 17:06:28,910 INFO  [XNIO-1 task-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status UP (replication=true)
+2019-12-18 17:06:47,563 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-18 17:07:47,562 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-18 17:07:51,795 INFO  [XNIO-1 task-82] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance GATEWAY/192.168.15.106:gateway:9091 with status UP (replication=false)
+2019-12-18 17:07:52,304 INFO  [XNIO-1 task-84] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance GATEWAY/192.168.15.106:gateway:9091 with status UP (replication=true)
+2019-12-18 17:08:24,483 INFO  [XNIO-1 task-90] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status UP (replication=false)
+2019-12-18 17:08:24,991 INFO  [XNIO-1 task-93] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status UP (replication=true)
+2019-12-18 17:08:34,377 INFO  [XNIO-1 task-39] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status DOWN (replication=false)
+2019-12-18 17:08:34,544 INFO  [XNIO-1 task-41] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status DOWN (replication=true)
+2019-12-18 17:08:43,608 INFO  [XNIO-1 task-71] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status UP (replication=false)
+2019-12-18 17:08:44,117 INFO  [XNIO-1 task-74] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status UP (replication=true)
+2019-12-18 17:08:47,562 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-18 17:09:33,303 INFO  [XNIO-1 task-86] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance SIMULATION/192.168.15.106:simulation:8090 with status UP (replication=false)
+2019-12-18 17:09:33,320 INFO  [XNIO-1 task-87] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance SIMULATION/192.168.15.106:simulation:8090 with status UP (replication=true)
+2019-12-18 17:09:47,562 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-18 17:10:40,105 INFO  [XNIO-1 task-51] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status DOWN (replication=false)
+2019-12-18 17:10:40,582 INFO  [XNIO-1 task-54] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status DOWN (replication=true)
+2019-12-18 17:10:40,586 WARN  [TaskBatchingWorker-target_localhost-8] com.netflix.eureka.cluster.ReplicationTask : The replication of task CALCULATOR/192.168.15.106:calculator:8080:Heartbeat@localhost failed with response code 409
+2019-12-18 17:10:40,586 WARN  [TaskBatchingWorker-target_localhost-8] com.netflix.eureka.cluster.PeerEurekaNode : Peer wants us to take the instance information from it, since the timestamp differs,Id : 192.168.15.106:calculator:8080 My Timestamp : 1576696123590, Peer's timestamp: 1576696240102
+2019-12-18 17:10:40,586 INFO  [TaskBatchingWorker-target_localhost-8] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CALCULATOR/192.168.15.106:calculator:8080 with status DOWN (replication=true)
+2019-12-18 17:10:45,013 INFO  [XNIO-1 task-73] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance GATEWAY/192.168.15.106:gateway:9091 with status DOWN (replication=false)
+2019-12-18 17:10:45,522 INFO  [XNIO-1 task-75] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance GATEWAY/192.168.15.106:gateway:9091 with status DOWN (replication=true)
+2019-12-18 17:10:47,563 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-18 17:10:47,563 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Evicting 1 items (expired=2, evictionLimit=1)
+2019-12-18 17:10:47,563 WARN  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : DS: Registry: expired lease for GATEWAY/192.168.15.106:gateway:9091
+2019-12-18 17:10:47,563 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance GATEWAY/192.168.15.106:gateway:9091 (replication=false)
+2019-12-18 17:10:48,036 INFO  [XNIO-1 task-84] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status DOWN (replication=false)
+2019-12-18 17:10:48,546 INFO  [XNIO-1 task-85] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status DOWN (replication=true)
+2019-12-18 17:10:50,354 INFO  [SpringContextShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application DISCOVERY with eureka with status DOWN
+2019-12-18 17:10:50,356 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shutting down ...
+2019-12-18 17:10:50,358 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shut down
+2019-12-18 17:10:50,361 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-18 17:10:50,363 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
+2019-12-18 17:10:50,364 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient
+2019-12-18 17:10:50,366 INFO  [SpringContextShutdownHook] io.undertow.servlet : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-12-18 17:10:50,367 INFO  [SpringContextShutdownHook] io.undertow : stopping server: Undertow - 2.0.28.Final
+2019-12-18 17:26:33,948 INFO  [main] com.example.microservies.discoveryserver.DiscoveryServerApplicationKt : The following profiles are active: staging
+2019-12-18 17:26:34,502 WARN  [main] org.springframework.boot.actuate.endpoint.EndpointId : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-12-18 17:26:34,592 INFO  [main] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=8671791f-1851-3689-903f-83e6d6c6d107
+2019-12-18 17:26:34,800 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-18 17:26:34,885 WARN  [main] io.undertow.websockets.jsr : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-12-18 17:26:34,897 INFO  [main] io.undertow.servlet : Initializing Spring embedded WebApplicationContext
+2019-12-18 17:26:34,897 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 935 ms
+2019-12-18 17:26:34,938 WARN  [main] com.netflix.config.sources.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-12-18 17:26:34,938 INFO  [main] com.netflix.config.sources.URLConfigurationSource : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-18 17:26:34,943 INFO  [main] com.netflix.config.DynamicPropertyFactory : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@62f9c790
+2019-12-18 17:26:35,236 WARN  [main] com.netflix.config.sources.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-12-18 17:26:35,237 INFO  [main] com.netflix.config.sources.URLConfigurationSource : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-18 17:26:35,316 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 17:26:35,554 WARN  [main] org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2019-12-18 17:26:35,576 WARN  [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2019-12-18 17:26:35,655 INFO  [main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
+2019-12-18 17:26:35,669 INFO  [main] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
+2019-12-18 17:26:35,669 INFO  [main] com.netflix.discovery.DiscoveryClient : Client configured to neither register nor query for data.
+2019-12-18 17:26:35,673 INFO  [main] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1576697195672 with initial instances count: 0
+2019-12-18 17:26:35,691 INFO  [main] com.netflix.eureka.DefaultEurekaServerContext : Initializing ...
+2019-12-18 17:26:35,692 INFO  [main] com.netflix.eureka.cluster.PeerEurekaNodes : Adding new peer nodes [http://localhost:8761/eureka/]
+2019-12-18 17:26:35,781 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON encoding codec LegacyJacksonJson
+2019-12-18 17:26:35,781 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON decoding codec LegacyJacksonJson
+2019-12-18 17:26:35,781 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML encoding codec XStreamXml
+2019-12-18 17:26:35,781 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML decoding codec XStreamXml
+2019-12-18 17:26:35,903 INFO  [main] com.netflix.eureka.cluster.PeerEurekaNodes : Replica node URL:  http://localhost:8761/eureka/
+2019-12-18 17:26:35,907 INFO  [main] com.netflix.eureka.registry.AbstractInstanceRegistry : Finished initializing remote region registries. All known remote regions: []
+2019-12-18 17:26:35,908 INFO  [main] com.netflix.eureka.DefaultEurekaServerContext : Initialized
+2019-12-18 17:26:35,916 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-18 17:26:35,955 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application DISCOVERY with eureka with status UP
+2019-12-18 17:26:35,956 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Setting the eureka configuration..
+2019-12-18 17:26:35,957 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-12-18 17:26:35,958 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Eureka environment value eureka.environment is not set, defaulting to test
+2019-12-18 17:26:35,963 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : isAws returned false
+2019-12-18 17:26:35,963 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap : Initialized server context
+2019-12-18 17:26:35,963 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Got 1 instances from neighboring DS node
+2019-12-18 17:26:35,963 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Renew threshold is: 1
+2019-12-18 17:26:35,963 INFO  [Thread-10] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl : Changing status to UP
+2019-12-18 17:26:35,969 INFO  [Thread-10] org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration : Started Eureka Server
+2019-12-18 17:26:35,986 INFO  [main] com.sun.jersey.server.impl.application.WebApplicationImpl : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-12-18 17:26:36,004 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON encoding codec LegacyJacksonJson
+2019-12-18 17:26:36,004 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using JSON decoding codec LegacyJacksonJson
+2019-12-18 17:26:36,004 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML encoding codec XStreamXml
+2019-12-18 17:26:36,004 INFO  [main] com.netflix.discovery.provider.DiscoveryJerseyProvider : Using XML decoding codec XStreamXml
+2019-12-18 17:26:36,143 INFO  [main] io.undertow : starting server: Undertow - 2.0.28.Final
+2019-12-18 17:26:36,146 INFO  [main] org.xnio : XNIO version 3.3.8.Final
+2019-12-18 17:26:36,150 INFO  [main] org.xnio.nio : XNIO NIO Implementation Version 3.3.8.Final
+2019-12-18 17:26:36,174 INFO  [main] org.springframework.boot.web.embedded.undertow.UndertowServletWebServer : Undertow started on port(s) 8761 (http) with context path ''
+2019-12-18 17:26:36,175 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration : Updating port to 8761
+2019-12-18 17:26:36,196 INFO  [main] com.example.microservies.discoveryserver.DiscoveryServerApplicationKt : Started DiscoveryServerApplicationKt in 2.865 seconds (JVM running for 3.33)
+2019-12-18 17:26:36,524 INFO  [RMI TCP Connection(3)-127.0.0.1] io.undertow.servlet : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 17:26:36,524 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2019-12-18 17:26:36,530 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 6 ms
+2019-12-18 17:26:36,594 WARN  [XNIO-1 task-1] com.netflix.eureka.registry.AbstractInstanceRegistry : DS: Registry: lease doesn't exist, registering resource: CONFIGSERVER - 192.168.15.106:configserver:9090
+2019-12-18 17:26:36,594 WARN  [XNIO-1 task-1] com.netflix.eureka.resources.InstanceResource : Not Found (Renew): CONFIGSERVER - 192.168.15.106:configserver:9090
+2019-12-18 17:26:36,635 INFO  [XNIO-1 task-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status UP (replication=false)
+2019-12-18 17:26:37,222 INFO  [XNIO-1 task-3] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status UP (replication=true)
+2019-12-18 17:26:40,082 INFO  [XNIO-1 task-9] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status DOWN (replication=false)
+2019-12-18 17:26:40,180 INFO  [XNIO-1 task-10] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status DOWN (replication=true)
+2019-12-18 17:26:40,184 WARN  [TaskBatchingWorker-target_localhost-2] com.netflix.eureka.cluster.ReplicationTask : The replication of task CONFIGSERVER/192.168.15.106:configserver:9090:Heartbeat@localhost failed with response code 409
+2019-12-18 17:26:40,184 WARN  [TaskBatchingWorker-target_localhost-2] com.netflix.eureka.cluster.PeerEurekaNode : Peer wants us to take the instance information from it, since the timestamp differs,Id : 192.168.15.106:configserver:9090 My Timestamp : 1576697196605, Peer's timestamp: 1576697200077
+2019-12-18 17:26:40,184 INFO  [TaskBatchingWorker-target_localhost-2] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status DOWN (replication=true)
+2019-12-18 17:26:43,088 INFO  [XNIO-1 task-16] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CONFIGSERVER/192.168.15.106:configserver:9090 (replication=false)
+2019-12-18 17:26:43,200 WARN  [XNIO-1 task-17] com.netflix.eureka.registry.AbstractInstanceRegistry : DS: Registry: lease doesn't exist, registering resource: CONFIGSERVER - 192.168.15.106:configserver:9090
+2019-12-18 17:26:43,200 WARN  [XNIO-1 task-17] com.netflix.eureka.resources.InstanceResource : Not Found (Renew): CONFIGSERVER - 192.168.15.106:configserver:9090
+2019-12-18 17:26:43,201 WARN  [XNIO-1 task-17] com.netflix.eureka.registry.AbstractInstanceRegistry : DS: Registry: cancel failed because Lease is not registered for: CONFIGSERVER/192.168.15.106:configserver:9090
+2019-12-18 17:26:43,201 INFO  [XNIO-1 task-17] com.netflix.eureka.resources.InstanceResource : Not Found (Cancel): CONFIGSERVER - 192.168.15.106:configserver:9090
+2019-12-18 17:26:43,202 WARN  [TaskBatchingWorker-target_localhost-3] com.netflix.eureka.cluster.ReplicationTask : The replication of task CONFIGSERVER/192.168.15.106:configserver:9090:Heartbeat@localhost failed with response code 404
+2019-12-18 17:26:43,202 WARN  [TaskBatchingWorker-target_localhost-3] com.netflix.eureka.cluster.PeerEurekaNode : CONFIGSERVER/192.168.15.106:configserver:9090:Heartbeat@localhost: missing entry.
+2019-12-18 17:26:43,202 WARN  [TaskBatchingWorker-target_localhost-3] com.netflix.eureka.cluster.PeerEurekaNode : CONFIGSERVER/192.168.15.106:configserver:9090:Heartbeat@localhost: cannot find instance id 192.168.15.106:configserver:9090 and hence replicating the instance with status DOWN
+2019-12-18 17:26:43,202 WARN  [TaskBatchingWorker-target_localhost-3] com.netflix.eureka.cluster.ReplicationTask : The replication of task CONFIGSERVER/192.168.15.106:configserver:9090:Cancel@localhost failed with response code 404
+2019-12-18 17:26:43,202 WARN  [TaskBatchingWorker-target_localhost-3] com.netflix.eureka.cluster.PeerEurekaNode : CONFIGSERVER/192.168.15.106:configserver:9090:Cancel@localhost: missing entry.
+2019-12-18 17:26:43,710 INFO  [XNIO-1 task-18] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status DOWN (replication=true)
+2019-12-18 17:26:47,184 INFO  [XNIO-1 task-20] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status UP (replication=false)
+2019-12-18 17:26:47,698 INFO  [XNIO-1 task-21] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status UP (replication=true)
+2019-12-18 17:26:58,003 INFO  [XNIO-1 task-42] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status DOWN (replication=false)
+2019-12-18 17:26:58,008 INFO  [XNIO-1 task-43] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CONFIGSERVER/192.168.15.106:configserver:9090 (replication=false)
+2019-12-18 17:26:58,518 INFO  [XNIO-1 task-44] com.netflix.eureka.registry.AbstractInstanceRegistry : Registered instance CONFIGSERVER/192.168.15.106:configserver:9090 with status DOWN (replication=true)
+2019-12-18 17:26:58,519 INFO  [XNIO-1 task-44] com.netflix.eureka.registry.AbstractInstanceRegistry : Cancelled instance CONFIGSERVER/192.168.15.106:configserver:9090 (replication=true)
+2019-12-18 17:27:35,964 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-18 17:28:35,964 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-18 17:29:35,964 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-18 17:30:35,964 INFO  [Eureka-EvictionTimer] com.netflix.eureka.registry.AbstractInstanceRegistry : Running the evict task with compensationTime 0ms
+2019-12-18 17:30:49,502 INFO  [SpringContextShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application DISCOVERY with eureka with status DOWN
+2019-12-18 17:30:49,504 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shutting down ...
+2019-12-18 17:30:49,506 INFO  [SpringContextShutdownHook] com.netflix.eureka.DefaultEurekaServerContext : Shut down
+2019-12-18 17:30:49,508 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-18 17:30:49,512 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
+2019-12-18 17:30:49,512 INFO  [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient
+2019-12-18 17:30:49,513 INFO  [SpringContextShutdownHook] io.undertow.servlet : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-12-18 17:30:49,514 INFO  [SpringContextShutdownHook] io.undertow : stopping server: Undertow - 2.0.28.Final

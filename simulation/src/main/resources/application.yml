@@ -1,0 +1,10 @@
+logging:
+  level:
+    root: INFO
+    com:
+      example:
+        microservices: DEBUG
+    org:
+      springframework:
+        cloud:
+          openfeign: INFO

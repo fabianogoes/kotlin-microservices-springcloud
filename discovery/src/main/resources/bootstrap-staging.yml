@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: discovery
+
+server:
+  port: ${SERVER_PORT:8761}
+  servlet:
+    application-display-name: ${spring.application.name}
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
