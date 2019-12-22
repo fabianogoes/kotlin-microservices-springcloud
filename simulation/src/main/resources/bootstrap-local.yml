@@ -3,13 +3,10 @@ spring:
     name: simulation
   profiles:
     active: default, local
-  cloud:
-    config:
+#  cloud:
+#    config:
+#      label: local, default
 #      uri: http://${CONFIG_SERVER_HOST:localhost}:9090
-      label: local, default
-      discovery:
-        enabled: true
-        service-id: configserver
 
 server:
   port: ${SERVER_PORT:8090}

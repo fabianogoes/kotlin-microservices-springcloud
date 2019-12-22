@@ -23,7 +23,7 @@ server:
 eureka:
   client:
     region: default
-    registry-fetch-interval-seconds: 15
+#    registry-fetch-interval-seconds: 15
     serviceUrl:
       defaultZone: http://${DISCOVERY_SERVER_HOST:localhost}:8761/eureka
   instance:

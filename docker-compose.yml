@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 
 services:
   discovery:
@@ -10,6 +10,17 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8761:8761
+    entrypoint:
+      [
+        "java",
+        "-Xmx64m",
+        "-Xss512k",
+        "-jar",
+        "-Dserver.port=8761",
+        "-Dspring.profiles.active=staging",
+        "-Djava.security.egd=file:/dev/./urandom",
+        "/app.jar",
+      ]
 
   configserver:
     image: kms/configserver
@@ -23,15 +34,20 @@ services:
       - "9090:9090"
     depends_on:
       - discovery
-    command: >
-      /bin/bash -c "
-        while ! nc -z discovery 8761;
-        do
-          echo sleeping;
-          sleep 1;
-        done;
-        echo Connected!;
-      "
+    command:
+      [
+        "./wait-for-it.sh",
+        "discovery:8761",
+        "--",
+        "java",
+        "-Xmx64m",
+        "-Xss512k",
+        "-jar",
+        "-Dserver.port=9090",
+        "-Dspring.profiles.active=staging",
+        "-Djava.security.egd=file:/dev/./urandom",
+        "/app.jar",
+      ]
     links:
       - discovery:discovery
 
@@ -49,42 +65,86 @@ services:
     depends_on:
       - discovery
       - configserver
+    command:
+      [
+        "./wait-for-it.sh",
+        "configserver:9090",
+        "--",
+        "java",
+        "-Xmx64m",
+        "-Xss512k",
+        "-jar",
+        "-Dserver.port=8080",
+        "-Dspring.profiles.active=staging",
+        "-Djava.security.egd=file:/dev/./urandom",
+        "/app.jar",
+      ]
     links:
       - discovery:discovery
       - configserver:configserver
-    command: >
-      /bin/bash -c "
-        while ! nc -z discovery 8761;
-        do
-          echo sleeping;
-          sleep 1;
-        done;
-        while ! nc -z configserver 9090;
-        do
-          echo sleeping;
-          sleep 1;
-        done;        
-        echo Connected!;
-      "
-  # simulation:
-  #   image: kms/simulation
-  #   container_name: simulation
-  #   build:
-  #     context: ./simulation
-  #     dockerfile: Dockerfile
-  #   environment:
-  #     - DISCOVERY_SERVER_HOST=discovery
-  #   ports:
-  #     - "8090:8090"
-  #   depends_on:
-  #     - discovery
-  #     - config
-  #     - gateway
-  #     - calculator
-  #   links:
-  #     - discovery:discovery
-  #     - configserver:configserver
-  #     - gateway:gateway
-  #     - calculator:calculator
-  #   tty: true
-  #   restart: unless-stopped
+
+  simulation:
+    image: kms/simulation
+    container_name: simulation
+    build:
+      context: ./simulation
+      dockerfile: Dockerfile
+    environment:
+      - DISCOVERY_SERVER_HOST=discovery
+      - CONFIG_SERVER_HOST=configserver
+    ports:
+      - "8090:8090"
+    depends_on:
+      - discovery
+      - configserver
+      - calculator
+    command:
+      [
+        "./wait-for-it.sh",
+        "calculator:8080",
+        "--",
+        "java",
+        "-Xmx64m",
+        "-Xss512k",
+        "-jar",
+        "-Dserver.port=8090",
+        "-Dspring.profiles.active=staging",
+        "-Djava.security.egd=file:/dev/./urandom",
+        "/app.jar",
+      ]
+    links:
+      - discovery:discovery
+      - configserver:configserver
+      - calculator:calculator
+
+  gateway:
+    image: kms/gateway
+    container_name: gateway
+    build:
+      context: ./gateway
+      dockerfile: Dockerfile
+    environment:
+      - DISCOVERY_SERVER_HOST=discovery
+      - CONFIG_SERVER_HOST=configserver
+    ports:
+      - "9091:9091"
+    depends_on:
+      - discovery
+      - configserver
+    command:
+      [
+        "./wait-for-it.sh",
+        "simulation:8090",
+        "--",
+        "java",
+        "-Xmx64m",
+        "-Xss512k",
+        "-jar",
+        "-Dserver.port=9091",
+        "-Dspring.profiles.active=staging",
+        "-Djava.security.egd=file:/dev/./urandom",
+        "/app.jar",
+      ]
+    links:
+      - discovery:discovery
+      - configserver:configserver

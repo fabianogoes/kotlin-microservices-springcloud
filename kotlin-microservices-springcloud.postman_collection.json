@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "health GATEWAY",
+			"name": "HEALTH CHECK GATEWAY",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -26,7 +26,7 @@
 			"response": []
 		},
 		{
-			"name": "health CALCULATOR by GATEWAY",
+			"name": "HEALTH CHECK CALCULATOR by GATEWAY",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -53,7 +53,7 @@
 			"response": []
 		},
 		{
-			"name": "GET CALCULATOR",
+			"name": "GET CALCULATOR by GATEWAY",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -72,21 +72,77 @@
 			"response": []
 		},
 		{
-			"name": "refresh CALCULATOR by GATEWAY",
+			"name": "POST refresh CALCULATOR by GATEWAY",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9091/calculator/actuator/refresh",
+					"raw": "http://localhost:8080/actuator/refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET SIMULATION by GATEWAY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/simulation",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9091",
 					"path": [
-						"calculator",
-						"actuator",
-						"refresh"
+						"simulation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET SIMULATION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/simulation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"simulation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CALCULATOR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
 					]
 				}
 			},

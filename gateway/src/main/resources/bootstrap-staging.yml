@@ -5,11 +5,12 @@ spring:
     active: staging
   cloud:
     config:
-#      uri: http://${CONFIG_SERVER_HOST:localhost}:9090
+      name: ${spring.application.name}
       label: staging
-      discovery:
-        enabled: true
-        service-id: configserver
+      uri: http://${CONFIG_SERVER_HOST:localhost}:9090
+#      discovery:
+#        service-id: configserver
+#        enabled: true
 
 server:
   port: ${SERVER_PORT:9091}
