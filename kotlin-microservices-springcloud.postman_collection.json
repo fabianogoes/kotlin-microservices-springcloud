@@ -53,6 +53,27 @@
 			"response": []
 		},
 		{
+			"name": "HEALTH CHECK SIMULATION by GATEWAY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/simulation/actuator/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"simulation",
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "GET CALCULATOR by GATEWAY",
 			"request": {
 				"method": "GET",
@@ -66,6 +87,25 @@
 					"port": "9091",
 					"path": [
 						"calculator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET SIMULATION by GATEWAY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/simulation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"simulation"
 					]
 				}
 			},
@@ -86,25 +126,6 @@
 					"path": [
 						"actuator",
 						"refresh"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GET SIMULATION by GATEWAY",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:9091/simulation",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "9091",
-					"path": [
-						"simulation"
 					]
 				}
 			},
