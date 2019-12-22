@@ -41,7 +41,7 @@ This is an example of Microservices using Spring Cloud and Kotlin
 ```
 
 **Wait for complete boot and verify Eureka UI:** http://localhost:8761   
-![Eureka][./docs/eureka-ui.png]
+![Eureka](docs/eureka-ui.png)
 
 
 ### Test using Postman
