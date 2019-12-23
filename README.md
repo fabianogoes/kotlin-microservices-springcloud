@@ -1,8 +1,8 @@
 # Example of Microservices with Spring Cloud and Kotlin
 
-This is an example of Microservices using Spring Cloud and Kotlin   
+This is an example of Microservices using Spring Cloud and Kotlin
 
-**Stack:**   
+**Stack:**
 - Java `1.8`
 - Maven `3`
 - Koltin `1.3.61`
@@ -26,13 +26,11 @@ This is an example of Microservices using Spring Cloud and Kotlin
 - [A Guide to Spring Cloud Netflix – Hystrix](https://www.baeldung.com/spring-cloud-netflix-hystrix)
 
 
-### Running Local
+### Running all Services Local
 -----------------
 
-**Required Local Installed** 
+**Required Local Installed**
 
-- Java 
-- Maven
 - Docker
 - docker-compose
 
@@ -40,13 +38,13 @@ This is an example of Microservices using Spring Cloud and Kotlin
 ./run.sh
 ```
 
-**Wait for complete boot and verify Eureka UI:** http://localhost:8761   
+**Wait for complete boot and verify Eureka UI:** http://localhost:8761
 ![Eureka](docs/eureka-ui.png)
 
 
 ### Test using Postman
 
-> Import Postam Collection `kotlin-microservices-springcloud.postman_collection.json` 
+> Import Postam Collection `kotlin-microservices-springcloud.postman_collection.json`
 
 1. HEALTH CHECK GATEWAY
 2. HEALTH CHECK CALCULATOR by GATEWAY
