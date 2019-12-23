@@ -12,7 +12,7 @@ This is an example of Microservices using Spring Cloud and Kotlin
 - Spring Cloud `Config Server`
 - Api Gateway `Zuul`
 - Actuator
-- Postam
+- Postman
 
 
 ### References
