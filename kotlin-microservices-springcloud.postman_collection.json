@@ -1,10 +1,56 @@
 {
 	"info": {
-		"_postman_id": "61eb232b-6b32-41c5-a773-0c3fd5916893",
+		"_postman_id": "1e03ca76-9a38-4085-a201-84ccd0038602",
 		"name": "kotlin-microservices-springcloud",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
+		{
+			"name": "HEALTH CHECK CALCULATOR",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "false",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/actuator/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HEALTH CHECK SIMULATION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/actuator/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
 		{
 			"name": "HEALTH CHECK GATEWAY",
 			"request": {
@@ -117,13 +163,14 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/actuator/refresh",
+					"raw": "http://localhost:9091/calculator/actuator/refresh",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "9091",
 					"path": [
+						"calculator",
 						"actuator",
 						"refresh"
 					]
@@ -133,6 +180,22 @@
 		},
 		{
 			"name": "GET SIMULATION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET SIMULATION by GATEWAY",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -164,6 +227,25 @@
 					"port": "8080",
 					"path": [
 						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CALCULATOR by GATEWAY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/calculator",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"calculator"
 					]
 				}
 			},
