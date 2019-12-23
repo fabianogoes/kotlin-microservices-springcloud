@@ -1,4 +1,4 @@
-# Example Microservices with SpringCloud and Kotlin
+# Example of Microservices with Spring Cloud and Kotlin
 
 This is an example of Microservices using Spring Cloud and Kotlin   
 
